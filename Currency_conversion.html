@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+	<title></title>
+	<link rel="stylesheet" href="css/weui.css" />
+	<link rel="stylesheet" href="css/weuix.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto.weui.min.js"></script>
+</head>
+
+<body>
+	<!--wy-header start-->
+	<div class="weui-fixed">
+		<div class="wy-header">
+			<div class="wy-header-icon-back">
+				<a href="index.html">
+					<i class="iconfont iconright"></i>
+				</a>
+			</div>
+			<div class="wy-header-title tcenter" style="margin:0 80px;"></div>
+			<div class="wy-header-xin weui-cell_select">
+				<div class="weui-cell__bd radius5 f15">
+					<select class="weui-select" name="">
+						<option value="1"></option>
+						<option value="2"></option>
+						<option value="3"></option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--wy-header end-->
+
+	<!--weui-content start-->
+	<div class="weui-content mt55 pb120">
+		<div class="weui-tab weui-tab-fixed weui-menu">
+			<div class="weui-navbar">
+				<a class="weui-navbar__item weui-bar__item--on" href=""></a>
+				<a class="weui-navbar__item" href=""></a>
+			</div>
+			<div class="weui-navbar weui-nav">
+				<a class="weui-navbar__item weui-bar__item--on" href="#tab1">USDT</a>
+				<a class="weui-navbar__item" href="#tab2"> FAIR</a>
+			</div>
+			<div class="weui-tab__bd" style="padding-top:90px;">
+				<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+					<div class="record-list">
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_text">
+									<h4 class="weui-media-box__title white-color">8765<img
+											src="images/guojia/1.png" class="gj-img radius"><span
+											class="weui-right white-color f16 pt5">1000<i class="f12 margin5-l">CNY</i></span></h4>
+									<div class="weui-media-box__desc f14 desc-text">
+										<p>1CNY</p>
+										<p>1000USDT</p>
+										<div class="buy-btn"><a href="javascript:;"
+												class="weui-right weui-btn weui-btn_mini yellow-linear black-color open-popup"
+												data-target="#buy"></a></div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+							</div>
+						</div>
+
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_text">
+									<h4 class="weui-media-box__title white-color">8765<img
+											src="images/guojia/2.png" class="gj-img radius"><span
+											class="weui-right white-color f16 pt5">1000<i class="f12 margin5-l">CNY</i></span></h4>
+									<div class="weui-media-box__desc f14 desc-text">
+										<p>1CNY</p>
+										<p>1000USDT</p>
+										<div class="buy-btn"><a href="javascript:;"
+												class="weui-right weui-btn weui-btn_mini yellow-linear black-color open-popup"
+												data-target="#buy"></a></div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+							</div>
+						</div>
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_text">
+									<h4 class="weui-media-box__title white-color">8765<img
+											src="images/guojia/2.png" class="gj-img radius"><span
+											class="weui-right white-color f16 pt5">1000<i class="f12 margin5-l">CNY</i></span></h4>
+									<div class="weui-media-box__desc f14 desc-text">
+										<p>1CNY</p>
+										<p>1000USDT</p>
+										<div class="buy-btn"><a href="javascript:;"
+												class="weui-right weui-btn weui-btn_mini yellow-linear black-color"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+							</div>
+						</div>
+
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_text">
+									<h4 class="weui-media-box__title white-color">8765<img
+											src="images/guojia/4.png" class="gj-img radius"><span
+											class="weui-right white-color f16 pt5">1000<i class="f12 margin5-l">CNY</i></span></h4>
+									<div class="weui-media-box__desc f14 desc-text">
+										<p>1CNY</p>
+										<p>1000USDT</p>
+										<div class="buy-btn"><a href="javascript:;"
+												class="weui-right weui-btn weui-btn_mini yellow-linear black-color"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+							</div>
+						</div>
+					
+						<div class="no-data" style="display: none;">
+							<div class="weui-msg">
+								<div class="weui-msg__icon"><img src="images/no-data.png"></div>
+								<h2 class="weui-msg__title"></h2>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+
+				<div id="tab2" class="weui-tab__bd-item">
+					<div class="record-list">
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_text">
+									<h4 class="weui-media-box__title white-color">8765<img
+											src="images/guojia/中国.png" class="gj-img radius"><span
+											class="weui-right white-color f16 pt5">1000<i class="f12 margin5-l">CNY</i></span></h4>
+									<div class="weui-media-box__desc f14 desc-text">
+										<p>1CNY</p>
+										<p>1000USDT</p>
+										<div class="buy-btn"><a href="javascript:;"
+												class="weui-right weui-btn weui-btn_mini yellow-linear black-color"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+							</div>
+						</div>
+
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_text">
+									<h4 class="weui-media-box__title white-color">8765<img
+											src="images/guojia/6.png" class="gj-img radius"><span
+											class="weui-right white-color f16 pt5">1000<i class="f12 margin5-l">CNY</i></span></h4>
+									<div class="weui-media-box__desc f14 desc-text">
+										<p>1CNY</p>
+										<p>1000USDT</p>
+										<div class="buy-btn"><a href="javascript:;"
+												class="weui-right weui-btn weui-btn_mini yellow-linear black-color"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+							</div>
+						</div>
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_text">
+									<h4 class="weui-media-box__title white-color">8765<img
+											src="images/guojia/9.png" class="gj-img radius"><span
+											class="weui-right white-color f16 pt5">1000<i class="f12 margin5-l">CNY</i></span></h4>
+									<div class="weui-media-box__desc f14 desc-text">
+										<p>1CNY</p>
+										<p>1000USDT</p>
+										<div class="buy-btn"><a href="javascript:;"
+												class="weui-right weui-btn weui-btn_mini yellow-linear black-color"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+							</div>
+						</div>
+
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_text">
+									<h4 class="weui-media-box__title white-color">8765<img
+											src="images/guojia/6.png" class="gj-img radius"><span
+											class="weui-right white-color f16 pt5">1000<i class="f12 margin5-l">CNY</i></span></h4>
+									<div class="weui-media-box__desc f14 desc-text">
+										<p>1CNY</p>
+										<p>1000USDT</p>
+										<div class="buy-btn"><a href="javascript:;"
+												class="weui-right weui-btn weui-btn_mini yellow-linear black-color"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+							</div>
+						</div>
+						
+						<div class="no-data" style="display: none;">
+							<div class="weui-msg">
+								<div class="weui-msg__icon"><img src="images/no-data.png"></div>
+								<h2 class="weui-msg__title"></h2>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="hb-btn">
+			<a href="javascript:;" class="hb-icon yellow-linear radius open-popup" data-target="#half"><span
+					class="iconfont iconhao"></span></a>
+			<a class="hb-icon yellow-linear radius" href=""><span class="iconfont iconlishijilu"></span>
+				<em class="weui-badge f12" style="position: absolute;top: -0.2em;right: -0.3em;">8</em>
+			</a>
+		</div>
+		
+	</div>
+	<!--weui-content end-->
+
+	
+	<div id="buy" class='weui-popup__container popup-bottom weui-popup'>
+		<div class="weui-popup__overlay"></div>
+		<div class="weui-popup__modal">
+			<div class="toolbar">
+				<div class="toolbar-inner">
+					<a href="javascript:;" class="picker-button close-popup white-color mt5"></a>
+					<div class="title tleft white-color f18">1000 USDT <span class="f14 margin5-l">1000</span>
+						<div class="gray-color f15"><span class="yellow-color">1</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="modal-content">
+				<div class="form-box form-list mt20">
+					<div class="weui-cells mt0">
+						<div class="weui-cells__title mt5"></div>
+						<div class="weui-cell radius5 weui-cell_select">
+							<div class="weui-cell__bd">
+								<select class="weui-select f16">
+									<option value="">USDT</option>
+									<option value=""> FAIR</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="weui-cells mt0">
+						<div class="weui-cells__title mt10"></div>
+						<div class="weui-cell radius5">
+							<div class="weui-cell__bd">
+								<input class="weui-input f16" placeholder="100~1000">
+							</div>
+						</div>
+						<div class="weui-cells__tips white-color"></div>
+					</div>
+
+					<div class="weui-cells mt0">
+						<div class="weui-cells__title mt10"></div>
+						<div class="weui-cell radius5">
+							<div class="weui-cell__bd">
+								<input class="weui-input f16" placeholder="" type="text">
+							</div>
+						</div>
+					</div>
+					<div class="weui-btn-area mt20 mb15">
+						<button type="button" class="weui-btn black-bgcolor yellow-color" onclick="showmark();"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="weui-mask order-mask"></div>
+	<div class="weui-dialog order-dialog">
+		<div class="weui-dialog__hd">
+			<strong class="weui-dialog__title"></strong>
+		</div>
+		<div class="weui-dialog__bd"></div>
+		<div class="weui-dialog__ft">
+			<a href="javascript:hidemark();" class="weui-dialog__btn default"></a>
+			<a href="javascript:;" class="weui-dialog__btn primary"></a>
+		</div>
+	</div>
+	<script>
+		function showmark() {
+			// $('#buy').removeClass('weui-popup__container--visible');
+			// $('.order-mask').removeClass('weui-mask--visible');
+			$('.order-mask').addClass('weui-mask--visible');
+			$('.order-dialog').addClass('weui-dialog--visible');
+		}
+
+		function hidemark() {
+
+			$('.order-mask').removeClass('weui-mask--visible');
+			$('.order-dialog').removeClass('weui-dialog--visible');
+		}
+	</script>
+
+
+	<div id="half" class='weui-popup__container popup-bottom weui-popup'>
+		<div class="weui-popup__overlay"></div>
+		<div class="weui-popup__modal">
+			<div class="toolbar">
+				<div class="toolbar-inner">
+					<a href="javascript:;" class="picker-button close-popup white-color"></a>
+					<h1 class="title tleft white-color f18">USDT</h1>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="modal-content">
+				<div class="form-box form-list">
+					<div class="weui-cells mt0">
+						<div class="weui-cells__title mt0"></div>
+						<div class="weui-cell radius5 weui-cell_select">
+							<div class="weui-cell__bd">
+								<select class="weui-select f16">
+									<option value="">USDT</option>
+									<option value=""> FAIR</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="weui-cells mt0">
+						<div class="weui-cells__title mt10"></div>
+						<div class="weui-cell radius5 weui-cell_select">
+							<div class="weui-cell__bd">
+								<select class="weui-select f16">
+									<option value=""></option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="weui-cells mt0">
+						<div class="weui-cells__title mt10"></div>
+						<div class="weui-cell radius5">
+							<div class="weui-cell__bd">
+								<input class="weui-input f16" placeholder="1000USDT">
+							</div>
+						</div>
+						<div class="weui-cells__tips white-color"></div>
+					</div>
+					<div class="weui-cells mt0">
+						<div class="weui-cells__title mt10"></div>
+						<div class="weui-cell radius5">
+							<div class="weui-cell__bd">
+								<input class="weui-input f16" placeholder="0.11111111">
+							</div>
+							<div class="weui-cell__ft">
+								<button class="weui-vcode-btn yellow-color f15"></button>
+							</div>
+						</div>
+					</div>
+					<div class="weui-cells mt0">
+						<div class="weui-cells__title mt10"></div>
+						<div class="weui-cell radius5">
+							<div class="weui-cell__bd">
+								<input class="weui-input f16" placeholder="" type="text">
+							</div>
+						</div>
+					</div>
+					<div class="weui-btn-area mt20 mb15">
+						<button type="button" class="weui-btn black-bgcolor yellow-color"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+</html>

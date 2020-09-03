@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+		<title></title>
+		<link rel="stylesheet" href="css/weui.css" />
+		<link rel="stylesheet" href="css/weuix.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/zepto.weui.min.js"></script>
+	</head>
+	<body>
+		<!--wy-header start-->
+		<div class="weui-fixed">
+			<div class="wy-header">
+				<div class="wy-header-icon-back">
+					<a href="javascript:history.back(-1);">
+						<i class="iconfont iconright"></i>
+					</a>
+				</div>
+				<div class="wy-header-title tcenter"></div>
+			</div>
+		</div>
+		<!--wy-header end-->
+
+		<!--weui-content start-->
+		<div class="weui-content mt45">
+			<div class="weui-cells input-time">
+				<div class="weui-cell">
+					<span class="mr5 white-color f15"></span>
+					<div class="weui-cell__bd radius5">
+						<i class="weui-icon_msg weui-icon-waiting-circle icon-time white-color"></i>
+						<input class="weui-input" type="text" value="2020-08-26 &nbsp;" id="date-time" readonly="">
+					</div>
+					<div class="weui-cell__ft ml5">
+						<a class="weui-btn weui-btn_mini yellow-bgcolor black-color searchDate f15" href="javascript:void(0)">search</a>
+					</div>
+				</div>
+			</div>
+			<div id="mescroll" class="mescroll" style="position: fixed;top: 96px;bottom: 0;height: auto;width:-webkit-fill-available;">
+			<div class="record-list">
+					<div class="list_lh">
+						<ul id="dataList">
+							
+						</ul>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+		<!--weui-content end-->
+		<script>
+			$("#date-time").datetimePicker({
+				title: '',
+				min: '1999-12-31', 
+				max: '2030-12-31', 
+				times: function() {
+					return [{
+						values: ['&nbsp;']
+					}]
+				},
+				onChange: function(picker, values, displayValues) {
+					console.log(values);
+					console.log(values.slice(0, 3));
+				},
+				onClose: function(picker) {
+					console.log(picker.value);
+					console.log(picker.value.slice(0, 3));
+				},
+			});
+		</script>
+
+		<link rel="stylesheet" href="css/mescroll.min.css" />
+		<script src="js/mescroll.min.js"></script>
+		<script src="js/pdlist1.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(function() {
+				
+				var mescroll = new MeScroll("mescroll", {
+					up: {
+						callback: getListData, 
+						noMoreSize: 5, 
+						empty: {
+							icon: "images/no-data.png", //
+							tip: "", //
+						},
+						clearEmptyId: "dataList", 
+						htmlNodata: '<p class="upwarp-nodata white-color">--  --</p>',
+					}
+				});
+
+		
+				function getListData(page) {
+					//联网加载数据
+					console.log("page.num==" + page.num);
+					getListDataFromNet(page.num, page.size, function(data) {
+						
+						mescroll.endSuccess(data.length); 
+						setListData(data);
+					}, function() {
+						
+						mescroll.endErr();
+					});
+				}
+
+		
+				function setListData(data) {
+					var listDom = document.getElementById("dataList");
+					for (var i = 0; i < data.length; i++) {
+						var pd = data[i];
+
+						var str = '<div class="weui-panel black-bgcolor radius10">';
+						str += '<div class="weui-panel__bd">';
+						str += '<div class="weui-media-box weui-media-box_text">';
+						str += '<h4 class="weui-media-box__title mb0 white-color f15">'+pd.pdName+'</h4>';
+						str += '</div>';
+						str += '</div>';
+						str += '<div class="weui-panel__ft">';
+						str += '<div class="weui-cell weui-cell_link">';
+						str += '<div class="gray-color f13">'+pd.pdTime+'</div>';
+						str += '</div>';
+						str += '</div>';
+						str += '</div>';
+						var liDom = document.createElement("li");
+						liDom.innerHTML = str;
+						listDom.appendChild(liDom);
+					}
+				}
+
+				/*联网加载列表数据*/
+				function getListDataFromNet(pageNum, pageSize, successCallback, errorCallback) {
+				
+					setTimeout(function() {
+				
+						var data = pdlist1; 
+						var listData = [];
+						for (var i = (pageNum - 1) * pageSize; i < pageNum * pageSize; i++) {
+							if (i == data.length) break;
+							listData.push(data[i]);
+						}
+						successCallback(listData);
+						//		                },
+						//		                error: errorCallback
+						//		            });
+					}, 1000)
+				}
+
+			});
+		</script>
+	</body>
+
+</html>

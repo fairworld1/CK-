@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+	<title>USDT</title>
+	<link rel="stylesheet" href="css/weui.css" />
+	<link rel="stylesheet" href="css/weuix.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto.weui.min.js"></script>
+</head>
+
+<body>
+
+	<div class="weui-fixed">
+		<div class="wy-header">
+			<div class="wy-header-icon-back">
+				<a href="javascript:history.back(-1);">
+					<i class="iconfont iconright"></i>
+				</a>
+			</div>
+			<div class="wy-header-title tcenter">USDT</div>
+		</div>
+	</div>
+
+	<div class="weui-content mt55">
+		<div class="weui-list">
+			<div class="black-bgcolor radius10 recharge">
+				<div class="czdz clearfix white-color">
+					<h3 class="f15"></h3>
+				</div>
+				<div class="dizhi mt10">
+					<em class="gray-color f14">3AD0CACBEGSBDC44A297888C10B18AED69DC879872E752D831F97EBDB87F53E1</em>
+				</div>
+				<div class="weui-btn-area tcenter">
+					<a href="javascript:;" class="weui-btn yellow-linear jsclip black-color f14"
+						data-url="3AD0CACBEGSBDC44A297888C10B18AED69DC879872E752D831F97EBDB87F53E1"></a>
+				</div>
+			</div>
+
+			<div class="record-list task-list mt10 lmqb">
+				<div class="weui-cells__title f15 yellow-color padding0 mt15"></div>
+				<div class="weui-panel black-bgcolor radius10">
+					<div class="weui-panel__bd">
+						<div class="weui-media-box weui-media-box_small-appmsg">
+							<div class="weui-cells">
+								<div class="weui-cell mb0">
+									<div class="weui-cell__bd weui-cell_primary">
+										<h4 class="weui-media-box__title white-color f15">1000 USDT</h4>
+										<p class="gray-color f14">0x47ea765eB2d24BB401888c2b7135a25745eB2d24BB401888c2b</p>
+									</div>
+									<div class="weui-cell__ft">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="weui-panel__ft">
+						<div class="weui-cell weui-cell_link mb0">
+							<div class="gray-color f13">2020-4-3 8:00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="weui-panel black-bgcolor radius10">
+					<div class="weui-panel__bd">
+						<div class="weui-media-box weui-media-box_small-appmsg">
+							<div class="weui-cells">
+								<div class="weui-cell mb0">
+									<div class="weui-cell__bd weui-cell_primary">
+										<h4 class="weui-media-box__title white-color f15">2000 USDT</h4>
+										<p class="gray-color f14">0x47ea765eB2d24BB401888c2b7135a25745eB2d24BB401888c2b</p>
+									</div>
+									<div class="weui-cell__ft">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="weui-panel__ft">
+						<div class="weui-cell weui-cell_link mb0">
+							<div class="gray-color f13">2020-4-3 8:00</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="no-data" style="display: none;">
+					<div class="weui-msg">
+						<div class="weui-msg__icon"><img src="images/no-data.png"></div>
+						<h2 class="weui-msg__title white-color"></h2>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>
+<script src="js/clipboard.min.js"></script>
+<script>
+	var clipboard = new Clipboard('.jsclip', {
+		text: function (e) {
+			return $(e).data('url') || $(e).data('href');
+		}
+	});
+	clipboard.on('success', function (e) {
+		$.toast('', 'text');
+	});
+</script>

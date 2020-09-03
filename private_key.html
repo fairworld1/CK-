@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+	<title></title>
+	<link rel="stylesheet" href="css/weui.css" />
+	<link rel="stylesheet" href="css/weuix.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto.weui.min.js"></script>
+</head>
+
+<body>
+	<!--wy-header start-->
+	<div class="weui-fixed">
+		<div class="wy-header">
+			<div class="wy-header-icon-back">
+				<a href="javascript:history.back(-1);">
+					<i class="iconfont iconright"></i>
+				</a>
+			</div>
+			<div class="wy-header-title tcenter"></div>
+		</div>
+	</div>
+	<!--wy-header end-->
+
+	<!--weui-content start-->
+	<div class="weui-content mt55">
+		<div class="Tokens">
+			<div class="form-box form-list black-bgcolor radius10 pt10 pb20">
+				<div class="weui-cells__tips white-color">
+
+				</div>
+				<div class="weui-cells__title white-color mt30 plr0 f15"></div>
+				<div class="dizhi">
+					<em class="gray-color f14">3AD0CACBEGSBDC44A297888C10B18AED69DC879872E752D831F97EBDB87F53E1</em>
+					<div class="weui-btn-area tcenter mb0">
+						<a href="javascript:;" class="weui-btn weui-btn_mini yellow-linear jsclip black-color"
+							data-url="3AD0CACBEGSBDC44A297888C10B18AED69DC879872E752D831F97EBDB87F53E1"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="weui-btn-area mt45">
+				<button type="button" class="weui-btn weui-btn-box yellow-color"></button>
+			</div>
+
+		</div>
+	</div>
+	<!--weui-content end-->
+	<script src="js/clipboard.min.js"></script>
+	<script>
+		var clipboard = new Clipboard('.jsclip', {
+			text: function (e) {
+				return $(e).data('url') || $(e).data('href');
+			}
+		});
+		clipboard.on('success', function (e) {
+			$.toast('', 'text');
+
+		});
+	</script>
+</body>
+
+</html>

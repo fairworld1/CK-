@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+	<title></title>
+	<link rel="stylesheet" href="css/weui.css" />
+	<link rel="stylesheet" href="css/weuix.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto.weui.min.js"></script>
+</head>
+
+<body>
+	<!--wy-header start-->
+	<div class="weui-fixed">
+		<div class="wy-header">
+			<div class="wy-header-icon-back">
+				<a href="javascript:history.back(-1);">
+					<i class="iconfont iconright"></i>
+				</a>
+			</div>
+			<div class="wy-header-title tcenter"></div>
+			<div class="wy-header-xin"><a href=""></a></div>
+		</div>
+	</div>
+	<!--wy-header end-->
+
+	<!--weui-content start-->
+	<div class="weui-content mt55">
+		<div class="record-list Switch">
+			<div class="weui-panel black-bgcolor radius10">
+				<div class="weui-panel__bd">
+					<div class="weui-media-box weui-media-box_small-appmsg weui-media-box_appmsg">
+						<div class="weui-cells" style="width:100%;">
+							<div class="weui-cell" id="delete-1">
+								<div class="weui-cell__hd weui-media-box__hd" style="width:50px;height:50px;">
+									<img class="weui-media-box__thumb radius"
+										src="images/head.png">
+								</div>
+								<div class="weui-cell__bd weui-cell_primary">
+									<h4 class="weui-media-box__title white-color f15"><span>(CHINA)</span></h4>
+									<p class="weui-media-box__desc f14">AUAMELA111</p>
+								</div>
+								<div class="weui-cell__ft">
+									<a href="#" class="address yellow-color f14"></a>
+									<a href="javascript:;" class="delete-gl address yellow-color f14" data-id="1"></a>
+								</div>
+							</div>
+							<div class="weui-cell" id="delete-2">
+								<div class="weui-cell__hd weui-media-box__hd" style="width:50px;height:50px;">
+									<img class="weui-media-box__thumb radius"
+										src="images/head.png">
+								</div>
+								<div class="weui-cell__bd weui-cell_primary">
+									<h4 class="weui-media-box__title white-color f15"></h4>
+									<p class="weui-media-box__desc f14"></p>
+								</div>
+								<div class="weui-cell__ft">
+									<a href="#" class="address yellow-color f14"></a>
+									<a href="javascript:;" class="delete-gl address yellow-color f14" data-id="2"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- -->
+	<div class="weui-mask"></div>
+	<div class="weui-dialog">
+		<div class="weui-dialog__hd">
+			<strong class="weui-dialog__title"></strong>
+		</div>
+		<div class="weui-dialog__bd">
+			<p class="weui-prompt-text"></p>
+			<input type="text" class="weui-input weui-prompt-input" placeholder="">
+		</div>
+		<div class="weui-dialog__ft">
+			<a href="javascript:;" class="weui-dialog__btn"></a>
+			<a href="javascript:;" class="weui-dialog__btn"></a>
+		</div>
+	</div>
+	<!-- /-->
+	<!--weui-content end-->
+
+	<script>
+		$('.delete-gl').click(function () {
+			var _delete = $(this).data("id");
+			var _this = $(this);
+			//console.log(_delete);
+			_this.parents('#delete-' + _delete).remove();
+
+			$.toast("", "text");	
+		})
+	</script>
+</body>
+
+</html>

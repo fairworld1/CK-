@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+	<title>官方资料</title>
+	<link rel="stylesheet" href="css/weui.css" />
+	<link rel="stylesheet" href="css/weuix.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto.weui.min.js"></script>
+</head>
+
+<body>
+	<!--wy-header start-->
+	<div class="weui-fixed">
+		<div class="wy-header">
+			<div class="wy-header-icon-back">
+				<a href="javascript:history.back(-1);">
+					<i class="iconfont iconright"></i>
+				</a>
+			</div>
+			<div class="wy-header-title tcenter">官方资料</div>
+		</div>
+	</div>
+	<!--wy-header end-->
+
+	<!--weui-content start-->
+	<div class="weui-content mt60">
+		<div class="form-box form-list">
+			<div class="weui-cells__title f16 yellow-color">官方视频</div>
+			<div class="video-box pt10">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="video"
+								vpath="http://sucai.suoluomei.cn/sucai_zs/images/20190816141812-%E5%85%83%E6%B0%94%E5%B0%91%E5%A5%B3%E5%A6%86.png"
+								ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
+								<img
+									src="http://sucai.suoluomei.cn/sucai_zs/images/20190816141812-%E5%85%83%E6%B0%94%E5%B0%91%E5%A5%B3%E5%A6%86.png" />
+								<img src="images/play-btn.png" class="videoed" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="video"
+								vpath="http://sucai.suoluomei.cn/sucai_zs/images/20190816141812-%E5%85%83%E6%B0%94%E5%B0%91%E5%A5%B3%E5%A6%86.png"
+								ipath="https://blz-videos.nosdn.127.net/1/OverWatch/AnimatedShots/Overwatch_AnimatedShot_CinematicTrailer.mp4">
+								<img
+									src="http://sucai.suoluomei.cn/sucai_zs/images/20190816141812-%E5%85%83%E6%B0%94%E5%B0%91%E5%A5%B3%E5%A6%86.png" />
+								<img src="images/play-btn.png" class="videoed" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="videos"></div>
+				<div class="video-mask"></div>
+			</div>
+
+
+			<div class="weui-cells__title f16 yellow-color">社区资料</div>
+			<div class="weui-cells mt0">
+				<div class="weui-cells__title mt0">英文地址：</div>
+				<div class="weui-cell radius5">
+					<div class="weui-cell__bd">
+						<input class="weui-input f16" value="https://store.ubi.com/cn" type="text">
+					</div>
+					<div class="weui-cell__ft">
+						<a href="javascript:;" class="jsclip" data-url="https://store.ubi.com/cn"><i
+								class="iconfont iconlishijilu white-color f18"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells mt0">
+				<div class="weui-cells__title">中文地址：</div>
+				<div class="weui-cell radius5">
+					<div class="weui-cell__bd">
+						<input class="weui-input f16" value="https://store.ubi.com/cn" type="text">
+					</div>
+					<div class="weui-cell__ft">
+						<a href="javascript:;" class="jsclip" data-url="https://store.ubi.com/cn"><i
+								class="iconfont iconlishijilu white-color f18"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells mt0">
+				<div class="weui-cells__title">日文地址：</div>
+				<div class="weui-cell radius5">
+					<div class="weui-cell__bd">
+						<input class="weui-input f16" value="https://store.ubi.com/cn" type="text">
+					</div>
+					<div class="weui-cell__ft">
+						<a href="javascript:;" class="jsclip" data-url="https://store.ubi.com/cn"><i
+								class="iconfont iconlishijilu white-color f18"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells mt0">
+				<div class="weui-cells__title">韩文地址：</div>
+				<div class="weui-cell radius5">
+					<div class="weui-cell__bd">
+						<input class="weui-input f16" value="https://store.ubi.com/cn" type="text">
+					</div>
+					<div class="weui-cell__ft">
+						<a href="javascript:;" class="jsclip" data-url="https://store.ubi.com/cn"><i
+								class="iconfont iconlishijilu white-color f18"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--weui-content end-->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
+	<script>
+		var swipervideo = new Swiper('.video-box .swiper-container', {
+			direction: 'horizontal',
+			slidesPerView: 2,
+			spaceBetween: 15,
+			//speed: 500,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+			},
+		});
+	</script>
+	<script type="text/javascript">
+		$('.video').each(function () { //遍历视频列表
+			$(this).click(function () { //这个视频被点击后执行	
+				var img = $(this).attr('vpath'); //获取视频预览图
+				var video = $(this).attr('ipath'); //获取视频路径
+				$('.videos').html("<video id=\"video\" poster='" + img + "' src='" + video +
+					"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"images/close.png\"/>"
+				);
+				$('.videos').show();
+				$('.video-mask').show();
+			});
+		});
+
+		function close1() {
+			var v = document.getElementById('video'); //获取视频节点
+			$('.videos').css("display", "none");; //点击关闭按钮关闭暂停视频
+			$('.video-mask').hide();
+			v.pause();
+			$('.videos').html();
+		}
+	</script>
+	<script>
+		$(function () {
+			//解决表单控件不能回弹 只有微信ios有这个问题
+			$("input,select,textarea").blur(function () {
+				setTimeout(() => {
+					const scrollHeight = document.documentElement.scrollTop || document.body
+						.scrollTop || 0;
+					window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+				}, 100);
+			})
+		})
+	</script>
+	<script src="js/clipboard.min.js"></script>
+	<script>
+		var clipboard = new Clipboard('.jsclip', {
+			text: function (e) {
+				return $(e).data('url') || $(e).data('href');
+			}
+		});
+		clipboard.on('success', function (e) {
+			$.toast('复制成功', 'text');
+
+		});
+	</script>
+</body>
+
+</html>

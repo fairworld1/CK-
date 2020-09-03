@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+	<title></title>
+	<link rel="stylesheet" href="css/weui.css" />
+	<link rel="stylesheet" href="css/weuix.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/zepto.weui.min.js"></script>
+</head>
+
+<body>
+	<!--wy-header start-->
+	<div class="weui-fixed">
+		<div class="wy-header">
+			<div class="wy-header-icon-back">
+				<a href="javascript:history.back(-1);">
+					<i class="iconfont iconright"></i>
+				</a>
+			</div>
+			<div class="wy-header-title tcenter"></div>
+		</div>
+	</div>
+	<!--wy-header end-->
+
+	<!--weui-content start-->
+	<div class="weui-content mt45">
+		<div class="weui-tab weui-tab-fixed weui-menu">
+			<div class="weui-navbar">
+				<a class="weui-navbar__item weui-bar__item--on" href="#tab1"></a>
+				<a class="weui-navbar__item" href="#tab2"></a>
+				<a class="weui-navbar__item" href="#tab3"></a>
+			</div>
+
+			<div class="weui-tab__bd">
+				<div class="weui-cell weui-cell_select weui-cell_select-after cell_select">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-labels yellow-color f15"></label>
+					</div>
+					<div class="weui-cell__bds radius5">
+						<select class="weui-select" name="select2">
+							<option value="1">30%</option>
+							<option value="2">20%</option>
+						</select>
+					</div>
+				</div>
+				<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+					<div class="record-list task-list">
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_small-appmsg">
+									<div class="weui-cells">
+										<a class="weui-cell" href="">
+											<div class="weui-cell__bd weui-cell_primary">
+												<h4 class="weui-media-box__title white-color">30%<span
+														class="yellow-color f15 right"></span></h4>
+												<p class="weui-media-box__desc f14">63USDT，：60USDT</p>
+												<p class="weui-media-box__desc f14">ID：635241</p>
+											</div>
+											<div class="weui-cell__ft">
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+								<div class="weui-cell weui-cell_link">
+									<div class="gray-color f13">2020-4-3 8:00</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_small-appmsg">
+									<div class="weui-cells">
+										<a class="weui-cell" href="">
+											<div class="weui-cell__bd weui-cell_primary">
+												<h4 class="weui-media-box__title white-color">30%<span
+														class="yellow-color f15 right"></span></h4>
+												<p class="weui-media-box__desc f14">63USDT，60USDT</p>
+												<p class="weui-media-box__desc f14">ID：635241</p>
+											</div>
+											<div class="weui-cell__ft">
+
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+								<div class="weui-cell weui-cell_link">
+									<div class="gray-color f13">2020-4-3 8:00</div>
+								</div>
+							</div>
+						</div>
+
+					
+						<div class="no-data" style="display: none;">
+							<div class="weui-msg">
+								<div class="weui-msg__icon"><img src="images/no-data.png"></div>
+								<h2 class="weui-msg__title"></h2>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+
+				<div id="tab2" class="weui-tab__bd-item">
+
+					<div class="record-list task-list">
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_small-appmsg">
+									<div class="weui-cells">
+										<a class="weui-cell" href="">
+											<div class="weui-cell__bd weui-cell_primary">
+												<h4 class="weui-media-box__title white-color">30%<span
+														class="yellow-color f15 right"></span></h4>
+												<p class="weui-media-box__desc f14">63USDT，：60USDT</p>
+												<p class="weui-media-box__desc f14">ID：635241</p>
+											</div>
+											<div class="weui-cell__ft">
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+								<div class="weui-cell weui-cell_link">
+									<div class="weui-cell__bd gray-color f13">2020-4-3 8:00</div>
+									<span class="weui-cell__ft">
+										<a href="javascript:;"
+											class="weui-btn weui-btn_mini yellow-linear black-color"></a>
+										<a href="javascript:;"
+											class="weui-btn weui-btn_mini yellow-linear black-color"></a>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_small-appmsg">
+									<div class="weui-cells">
+										<a class="weui-cell" href="">
+											<div class="weui-cell__bd weui-cell_primary">
+												<h4 class="weui-media-box__title white-color">30%<span
+														class="yellow-color f15 right"></span></h4>
+												<p class="weui-media-box__desc f14">63USDT，60USDT</p>
+												<p class="weui-media-box__desc f14">ID：635241</p>
+											</div>
+											<div class="weui-cell__ft">
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+								<div class="weui-cell weui-cell_link">
+									<div class="weui-cell__bd gray-color f13">2020-4-3 8:00</div>
+									<span class="weui-cell__ft">
+										<a href="javascript:showmark3();"
+											class="weui-btn weui-btn_mini yellow-linear black-color"></a>
+									</span>
+								</div>
+							</div>
+						</div>
+
+				
+						<div class="no-data" style="display: none;">
+							<div class="weui-msg">
+								<div class="weui-msg__icon"><img src="images/no-data.png"></div>
+								<h2 class="weui-msg__title"></h2>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+
+				<div id="tab3" class="weui-tab__bd-item">
+					<div class="record-list task-list">
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_small-appmsg">
+									<div class="weui-cells">
+										<a class="weui-cell" href="javascript:;">
+											<div class="weui-cell__bd weui-cell_primary">
+												<h4 class="weui-media-box__title white-color">30%<span
+														class="yellow-color f15 right"></span></h4>
+												<p class="weui-media-box__desc f14">63USDT，60USDT</p>
+												<p class="weui-media-box__desc f14">ID：635241</p>
+											</div>
+											<div class="weui-cell__ft">
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+								<div class="weui-cell weui-cell_link">
+									<div class="weui-cell__bd gray-color f13">2020-4-3 8:00</div>
+									<span class="weui-cell__ft">
+										<a href="javascript:showmark2();"
+											class="weui-btn weui-btn_mini yellow-linear black-color"></a>
+										<a href="javascript:showmark();"
+											class="weui-btn weui-btn_mini yellow-linear black-color"></a>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_small-appmsg">
+									<div class="weui-cells">
+										<a class="weui-cell" href="javascript:;">
+											<div class="weui-cell__bd weui-cell_primary">
+												<h4 class="weui-media-box__title white-color">30%<span
+														class="yellow-color f15 right"></span></h4>
+												<p class="weui-media-box__desc f14">63USDT，60USDT</p>
+												<p class="weui-media-box__desc f14">ID：635241</p>
+											</div>
+											<div class="weui-cell__ft">
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+								<div class="weui-cell weui-cell_link">
+									<div class="weui-cell__bd gray-color f13">2020-4-3 8:00</div>
+									<span class="weui-cell__ft">
+										<a href="javascript:showmark3();"
+											class="weui-btn weui-btn_mini yellow-linear black-color"></a>
+										<a href="#" class="weui-btn weui-btn_mini yellow-linear black-color"></a>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="weui-panel black-bgcolor radius10">
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_small-appmsg">
+									<div class="weui-cells">
+										<a class="weui-cell" href="javascript:;">
+											<div class="weui-cell__bd weui-cell_primary">
+												<h4 class="weui-media-box__title white-color">30%<span
+														class="yellow-color f15 right"></span></h4>
+												<p class="weui-media-box__desc f14">63USDT，60USDT</p>
+												<p class="weui-media-box__desc f14">ID：635241</p>
+											</div>
+											<div class="weui-cell__ft">
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="weui-panel__ft">
+								<div class="weui-cell weui-cell_link">
+									<div class="weui-cell__bd gray-color f13">2020-4-3 8:00</div>
+									<span class="weui-cell__ft">
+										<a href="javascript:;"
+											class="weui-btn weui-btn_mini yellow-color"></a>
+									</span>
+								</div>
+							</div>
+						</div>
+
+					
+						<div class="no-data" style="display: none;">
+							<div class="weui-msg">
+								<div class="weui-msg__icon"><img src="images/no-data.png"></div>
+								<h2 class="weui-msg__title"></h2>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  -->
+	<div class="weui-mask mask-draw"></div>
+	<div class="weui-dialog dialog-draw">
+		<div class="weui-dialog__hd">
+			<strong class="weui-dialog__title"></strong>
+		</div>
+		<div class="weui-dialog__bd">
+			<p class="weui-prompt-text"><span class="yellow-color">100</span> USDT?</p>
+			<input type="text" class="weui-input weui-prompt-input" placeholder="">
+		</div>
+		<div class="weui-dialog__ft">
+			<a href="javascript:hidemark();" class="weui-dialog__btn"></a>
+			<a href="javascript:;" class="weui-dialog__btn"></a>
+		</div>
+	</div>
+
+	<div class="weui-mask mask-zdft"></div>
+	<div class="weui-dialog dialog-zdft">
+		<div class="weui-dialog__hd">
+			<strong class="weui-dialog__title"></strong>
+		</div>
+		<div class="weui-dialog__bd">
+			<p class="weui-prompt-text"><span class="yellow-color">30%</span>?</p>
+			<input type="text" class="weui-input weui-prompt-input" placeholder="">
+		</div>
+		<div class="weui-dialog__ft">
+			<a href="javascript:hidemark2();" class="weui-dialog__btn"></a>
+			<a href="javascript:;" class="weui-dialog__btn"></a>
+		</div>
+	</div>
+
+	<div class="weui-mask mask-zjft"></div>
+	<div class="weui-dialog dialog-zjft">
+		<div class="weui-dialog__hd">
+			<strong class="weui-dialog__title"></strong>
+		</div>
+		<div class="weui-dialog__bd">
+			<p class="weui-prompt-text tleft"><span class="yellow-color">3000USDT</span></p>
+			<input type="text" class="weui-input weui-prompt-input" placeholder="">
+			<input type="text" class="weui-input weui-prompt-input" placeholder="">
+		</div>
+		<div class="weui-dialog__ft">
+			<a href="javascript:hidemark3();" class="weui-dialog__btn"></a>
+			<a href="javascript:;" class="weui-dialog__btn"></a>
+		</div>
+	</div>
+	<!-- /-->
+	<script>
+		function showmark() {
+			$('.mask-draw').addClass('weui-mask--visible');
+			$('.dialog-draw').addClass('weui-dialog--visible');
+		}
+
+		function hidemark() {
+			$('.mask-draw').removeClass('weui-mask--visible');
+			$('.dialog-draw').removeClass('weui-dialog--visible');
+		}
+
+		function showmark2() {
+			$('.mask-zdft').addClass('weui-mask--visible');
+			$('.dialog-zdft').addClass('weui-dialog--visible');
+		}
+
+		function hidemark2() {
+			$('.mask-zdft').removeClass('weui-mask--visible');
+			$('.dialog-zdft').removeClass('weui-dialog--visible');
+		}
+
+		function showmark3() {
+			$('.mask-zjft').addClass('weui-mask--visible');
+			$('.dialog-zjft').addClass('weui-dialog--visible');
+		}
+
+		function hidemark3() {
+			$('.mask-zjft').removeClass('weui-mask--visible');
+			$('.dialog-zjft').removeClass('weui-dialog--visible');
+		}
+	</script>
+	<!--weui-content end-->
+
+	<!--footer start-->
+	<div style="width: 100%;height:3.5rem;"></div>
+	<div class="footer">
+		<div class="weui-tabbar tab-bottom">
+			<a href="index.html" class="weui-tabbar__item">
+				<i class="iconfont iconshouye f27 weui-tabbar__icon"></i>
+				<p class="weui-tabbar__label"></p>
+			</a>
+			<a href="钱包.html" class="weui-tabbar__item">
+				<i class="iconfont iconqianbao f27 weui-tabbar__icon"></i>
+				<p class="weui-tabbar__label"></p>
+			</a>
+			<a href="任务.html" class="weui-tabbar__item weui-bar__item_on">
+				<i class="iconfont iconrenwu f27 weui-tabbar__icon"></i>
+				<p class="weui-tabbar__label"></p>
+			</a>
+			<a href="账户.html" class="weui-tabbar__item">
+				<i class="iconfont iconwode f27 weui-tabbar__icon"></i>
+				<p class="weui-tabbar__label"></p>
+			</a>
+		</div>
+	</div>
+	<!--footer end-->
+</body>
+
+</html>

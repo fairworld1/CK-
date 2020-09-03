@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+		<title></title>
+		<link rel="stylesheet" href="css/weui.css" />
+		<link rel="stylesheet" href="css/weuix.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/zepto.weui.min.js"></script>
+	</head>
+
+	<body>
+		<!--wy-header start-->
+		<div class="weui-fixed">
+			<div class="wy-header">
+				<div class="wy-header-icon-back">
+					<a href="javascript:history.back(-1);">
+						<i class="iconfont iconright"></i>
+					</a>
+				</div>
+				<div class="wy-header-title tcenter"></div>
+			</div>
+		</div>
+		<!--wy-header end-->
+
+		<!--weui-content start-->
+		<div class="weui-content mt55">
+			<div class="data-box">
+				<div class="weui-cells">
+					<div class="weui-cell weui-cell_access black-bgcolor radius5">
+						<div class="weui-cell__bd white-color">
+							<p></p>
+						</div>
+						<div class="weui-cell__ft">
+							<div class="uploader_avatar">
+								<ul class="weui-uploader__files" id='img1'>
+									<li class="weui-uploader__file uploaders radius" style="background-image: url(https://team.weui.io/avatar/bear.jpg);"></li>
+								</ul>
+								<div class="uploader_wrp">
+									<input class="weui-uploader__input uploaders-input" accept="image/*"
+									 id="i1" onchange="previewImage(this)" multiple="" type="file" />
+									<input type="hidden" id="i2" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="weui-cell black-bgcolor radius5">
+						<div class="weui-cell__bd white-color">
+							<p></p>
+						</div>
+						<div class="weui-cell__ft white-color">
+							<input type="text" class="weui-input tright f15" value="" />
+						</div>
+					</div>
+					<div class="weui-cell black-bgcolor radius5">
+						<div class="weui-cell__bd white-color">
+							<p></p>
+						</div>
+						<div class="weui-cell__ft white-color f15">
+							<span></span>
+						</div>
+					</div>
+					<div class="weui-cell black-bgcolor radius5">
+						<div class="weui-cell__bd white-color">
+							<p></p>
+						</div>
+						<div class="weui-cell__ft white-color f15">
+							<span>AADHIAE342</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--weui-content end-->
+
+		<script>
+			function previewImage(file) {
+				var MAXWIDTH = 100;
+				var MAXHEIGHT = 200;
+				if (file.files && file.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(evt) {
+						$('#img1').html('<li class="weui-uploader__file uploaders radius" style="background-image:url(' + evt
+							.target.result + ');"></li>');
+					};
+					reader.readAsDataURL(file.files[0]); //
+					console.log(file.files[0]);
+				}
+			}
+		</script>
+	</body>
+
+</html>

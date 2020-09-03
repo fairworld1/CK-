@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+		<title></title>
+		<link rel="stylesheet" href="css/weui.css" />
+		<link rel="stylesheet" href="css/weuix.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/zepto.weui.min.js"></script>
+	</head>
+
+	<body>
+		<!--wy-header start-->
+		<div class="weui-fixed">
+			<div class="wy-header">
+				<div class="wy-header-icon-back">
+					<a href="javascript:history.back(-1);">
+						<i class="iconfont iconright"></i>
+					</a>
+				</div>
+				<div class="wy-header-title tcenter">USDT-ERC20</div>
+			</div>
+		</div>
+		<!--wy-header end-->
+
+		<!--weui-content start-->
+		<div class="weui-content mt45">
+			<div class="collection">
+				<h3 class="tcenter white-color f17 -bold">USDT</h3>
+				<div class="weui-ewm radius5">
+					<img src="images/no-data.png">
+				</div>
+				<textarea class="weui-input white-color" style="height:45px;">3AD0CACBEGSBDC44A297888C10B18AED69DC879872E752D831F97EBDB87F53E1</textarea>
+				<a href="javascript:;" class="weui-btn yellow-bgcolor black-color jsclip mt10" data-url="3AD0CACBEGSBDC44A297888C10B18AED69DC879872E752D831F97EBDB87F53E1"></a>
+				<div class="weui-cells__tips gray-color padding0 mt10"></div>
+			</div>
+		</div>
+		<!--weui-content end-->
+		<script src="js/clipboard.min.js"></script>
+		<script>
+			var clipboard = new Clipboard('.jsclip', {
+				text: function(e) {
+					return $(e).data('url') || $(e).data('href');
+				}
+			});
+			clipboard.on('success', function(e) {
+				$.toast('', 'text');
+			});
+		</script>
+	</body>
+
+</html>

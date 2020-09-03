@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+		<title></title>
+		<link rel="stylesheet" href="css/weui.css" />
+		<link rel="stylesheet" href="css/weuix.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/zepto.weui.min.js"></script>
+	</head>
+
+	<body>
+		<!--wy-header start-->
+		<div class="weui-fixed">
+			<div class="wy-header">
+				<div class="wy-header-icon-back">
+					<a href="javascript:history.back(-1);">
+						<i class="iconfont iconright"></i>
+					</a>
+				</div>
+				<div class="wy-header-title tcenter">USDT-ERC20</div>
+			</div>
+		</div>
+		<!--wy-header end-->
+
+		<!--weui-content start-->
+		<div class="weui-content mt45">
+			<div class="form-box form-list">
+				<div class="weui-cells mt0">
+					<div class="weui-cells__title"><span class="gray-color f14">（<em class="yellow-color">10000USDT</em> ）</span></div>
+					<div class="weui-cell radius5">
+						<div class="weui-cell__bd">
+							<input class="weui-input f16" placeholder="10USDT" type="text">
+						</div>
+						<button class="weui-vcode-btn yellow-color f15"></button>
+					</div>
+				</div>
+				<div class="weui-cells mt0">
+					<div class="weui-cells__title"></div>
+					<div class="weui-cell radius5">
+						<div class="weui-cell__bd">
+							<textarea class="weui-input f16" placeholder="" style="height:45px;"></textarea>
+						</div>
+						<div class="weui-cell__ft">
+							<a href="" class="weui-vcode-btn yellow-color f18 iconfont iconhao"></a>
+						</div>
+					</div>
+				</div>
+				<div class="weui-cells mt0">
+					<div class="weui-cells__title"></div>
+					<div class="weui-cell radius5">
+						<div class="weui-cell__bd">
+							<textarea class="weui-input f16" placeholder="" style="height:45px;"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="weui-cells mt0">
+					<div class="weui-cells__title"></div>
+					<div class="weui-cell radius5">
+						<div class="weui-cell__bd">
+							<input class="weui-input f16" placeholder="" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="weui-cells mt0">
+					<div class="weui-cells__title"></div>
+					<div class="weui-cell radius5 weui-cell_vcode">
+						<div class="weui-cell__bd">
+							<input class="weui-input f16" placeholder="" type="text">
+						</div>
+						<div class="weui-cell__ft">
+							<button class="weui-vcode-btn yellow-color f15" onclick="settime(this)"></button>
+						</div>
+					</div>
+				</div>
+				<div class="weui-btn-area mt45">
+					<button type="button" class="weui-btn black-bgcolor yellow-color"></button>
+					<div class="weui-cells__tips tcenter  white-color">USDT：<span class="yellow-color">10000USDT</span>，<span class="yellow-color">5USDT</span></div>
+				</div>
+			</div>
+
+		</div>
+		<!--weui-content end-->
+
+		<script>
+			var countdown = 60;
+			function settime(obj) {
+				var code = $(obj);
+				if (countdown == 0) {
+					code.removeAttr('disabled');
+					code.text("");
+					countdown = 60;
+					return;
+				} else {
+					code.text("(" + countdown + ")");
+					code.attr('disabled', true);
+					countdown--;
+				}
+				setTimeout(function() {
+					settime(obj)
+				}, 1000);
+			}
+			
+			$(function() {
+
+				$("input,select,textarea").blur(function() {
+					setTimeout(() => {
+						const scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
+						window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+					}, 100);
+				})
+			})
+		</script>
+	</body>
+
+</html>

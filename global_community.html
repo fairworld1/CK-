@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+		<title></title>
+		<link rel="stylesheet" href="css/weui.css" />
+		<link rel="stylesheet" href="css/weuix.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+		<script src="js/zepto.weui.min.js"></script>
+	</head>
+
+	<body>
+		<!--wy-header start-->
+		<div class="weui-fixed">
+			<div class="wy-header">
+				<div class="wy-header-icon-back">
+					<a href="javascript:history.back(-1);">
+						<i class="iconfont iconright"></i>
+					</a>
+				</div>
+				<div class="wy-header-title tcenter"></div>
+			</div>
+		</div>
+		<!--wy-header end-->
+
+		<!--weui-content start-->
+		<div class="weui-content mt45">
+			<div class="form-box form-list">
+				<div class="weui-flex weui-index-notice margin0">
+					<div class="notice-icon iconfont icongonggao"></div>
+					<div class="marquee clearfix">
+						<ul>
+							<li><a href=""></a></li>
+							<li><a href=""></a></li>
+						</ul>
+					</div>
+					<a href="" class="notice-more white-color"></a>
+				</div>
+				<script src="js/marquee.min.js"></script>
+				<script>
+					$(function() {
+						$(".marquee").kxbdMarquee({
+							isEqual: false
+						});
+					})
+				</script>
+				<div class="weui-cells__title f16 yellow-color mt10"></div>
+				<div class="video-box pt10">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="video" vpath="http://sucai.suoluomei.cn/sucai_zs/images/20190816141812-%E5%85%83%E6%B0%94%E5%B0%91%E5%A5%B3%E5%A6%86.png" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/OVR-S03_E03_McCree_REUNION_zhCN_1080P_mb78.mp4">
+									<img src="http://sucai.suoluomei.cn/sucai_zs/images/20190816141812-%E5%85%83%E6%B0%94%E5%B0%91%E5%A5%B3%E5%A6%86.png" />
+									<img src="images/play-btn.png" class="videoed" />
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="video" vpath="http://sucai.suoluomei.cn/sucai_zs/images/20190816141812-%E5%85%83%E6%B0%94%E5%B0%91%E5%A5%B3%E5%A6%86.png" ipath="https://blz-videos.nosdn.127.net/1/OverWatch/AnimatedShots/Overwatch_AnimatedShot_CinematicTrailer.mp4">
+									<img src="http://sucai.suoluomei.cn/sucai_zs/images/20190816141812-%E5%85%83%E6%B0%94%E5%B0%91%E5%A5%B3%E5%A6%86.png" />
+									<img src="images/play-btn.png" class="videoed" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="videos"></div>
+					<div class="video-mask"></div>
+				</div>
+
+				<div class="weui-cells__title f16 yellow-color"></div>
+				<div class="weui-cells mt0">
+					<div class="weui-cells__title mt0"></div>
+					<div class="weui-cell radius5">
+						<div class="weui-cell__bd">
+							<textarea class="weui-input f16" placeholder="" style="height:80px;"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="weui-btn-area mt45">
+					<button type="button" class="weui-btn weui-btn-box yellow-color"></button>
+				</div>
+			</div>
+		</div>
+		<!--weui-content end-->
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<script src="js/swiper.min.js"></script>
+		<script>
+			var swipervideo = new Swiper('.video-box .swiper-container', {
+				direction: 'horizontal',
+				slidesPerView: 2,
+				spaceBetween: 15,
+				//speed: 500,
+				loop: true,
+				autoplay: {
+					delay: 4500,
+				},
+			});
+		</script>
+		<script type="text/javascript">
+			$('.video').each(function() { 
+				$(this).click(function() { 
+					var img = $(this).attr('vpath'); 
+					var video = $(this).attr('ipath'); 
+					$('.videos').html("<video id=\"video\" poster='" + img + "' src='" + video +
+						"' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"images/close.png\"/>"
+					);
+					$('.videos').show();
+					$('.video-mask').show();
+				});
+			});
+
+			function close1() {
+				var v = document.getElementById('video'); 
+				$('.videos').css("display", "none"); 
+				$('.video-mask').hide();
+				v.pause();
+				$('.videos').html();
+			}
+		</script>
+		<script>
+			$(function() {
+
+				$("input,select,textarea").blur(function() {
+					setTimeout(() => {
+						const scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
+						window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+					}, 100);
+				})
+			})
+		</script>
+	</body>
+
+</html>

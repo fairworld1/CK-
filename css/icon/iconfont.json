@@ -1,0 +1,191 @@
+{
+  "id": "1736910",
+  "name": "刺客契约",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16915591",
+      "name": "ios",
+      "font_class": "ios",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "16915592",
+      "name": "安卓",
+      "font_class": "anzhuo",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "16276211",
+      "name": "复制",
+      "font_class": "fuzhi",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "16276212",
+      "name": "APP下载",
+      "font_class": "APPxiazai",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "16254594",
+      "name": "提示",
+      "font_class": "tishi",
+      "unicode": "e6d2",
+      "unicode_decimal": 59090
+    },
+    {
+      "icon_id": "14459944",
+      "name": "地址本",
+      "font_class": "dizhiben",
+      "unicode": "e6c0",
+      "unicode_decimal": 59072
+    },
+    {
+      "icon_id": "516400",
+      "name": "左",
+      "font_class": "icon1",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "752263",
+      "name": "右",
+      "font_class": "you2",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "6082225",
+      "name": "右",
+      "font_class": "you1",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "6082226",
+      "name": "左",
+      "font_class": "zuo",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "14059547",
+      "name": "历史记录",
+      "font_class": "lishijilu",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "8836440",
+      "name": "加号",
+      "font_class": "hao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3092302",
+      "name": "任务",
+      "font_class": "renwu1",
+      "unicode": "e789",
+      "unicode_decimal": 59273
+    },
+    {
+      "icon_id": "6893152",
+      "name": "左箭头",
+      "font_class": "right",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "14001463",
+      "name": "货币兑换",
+      "font_class": "huobiduihuan",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "14000465",
+      "name": "刺客联盟",
+      "font_class": "cikelianmeng",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "14000466",
+      "name": "官方资料",
+      "font_class": "guanfangziliao",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "14000468",
+      "name": "钱包",
+      "font_class": "qianbao",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "14000469",
+      "name": "合约序列",
+      "font_class": "heyuexulie",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
+      "icon_id": "14000471",
+      "name": "任务",
+      "font_class": "renwu",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "14000472",
+      "name": "幸运玩家",
+      "font_class": "xingyunwanjia",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "7777137",
+      "name": "社区",
+      "font_class": "shequ",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "7960177",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "11327649",
+      "name": "分 享",
+      "font_class": "fenxiang",
+      "unicode": "e71f",
+      "unicode_decimal": 59167
+    },
+    {
+      "icon_id": "12103866",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "10715426",
+      "name": "公告",
+      "font_class": "gonggao",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    }
+  ]
+}
